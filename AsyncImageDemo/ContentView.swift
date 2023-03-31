@@ -17,6 +17,9 @@ struct ContentView: View {
                     .resizable()
                     .scaledToFit()
             } placeholder: {
+                ProgressView()
+                    .scaleEffect(10)
+                    .tint(.red)
                 Image(systemName: "questionmark.square.dashed")
                     .resizable()
                     .scaledToFit()
