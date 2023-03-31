@@ -20,9 +20,9 @@ struct ContentView: View {
                 ProgressView()
                     .scaleEffect(10)
                     .tint(.red)
-                Image(systemName: "questionmark.square.dashed")
-                    .resizable()
-                    .scaledToFit()
+//                Image(systemName: "questionmark.square.dashed")
+//                    .resizable()
+//                    .scaledToFit()
             }
             .frame(width: 300, height: 300)
                
