@@ -10,14 +10,23 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
-    }
-}
+            AsyncImage(url: URL(string:
+                "https://developer.apple.com/assets/elements/icons/swiftui/swiftui-96x96_2x.png"))
+            { image in
+                image
+                    .resizable()
+                    .scaledToFit()
+            } placeholder: {
+                Image(systemName: "questionmark.square.dashed")
+                    .resizable()
+                    .scaledToFit()
+            }
+            .frame(width: 300, height: 300)
+               
+        }  // VStack
+
+    }  // some View
+}  // ContentView
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
